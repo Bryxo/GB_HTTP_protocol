@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>avtoriz</title>
+</head>
+<body>
+   <div class="form_auth_block">
+      <div class="form_auth_block_content">
+         <h3 class="form_auth_block_head_text">Авторизация</h3>
+         <form action="http://localhost:8000/auth" method="POST" class="form_auth_style">
+            <p>
+               <label>Введите Ваш login</label>
+               <input id="user_login" type="text" name="auth_login" placeholder="Введите Ваш login" >
+            </p>
+            <p>
+               <label>Введите Ваш пароль</label>
+               <input id="user_password" type="password" name="auth_pass" placeholder="Введите пароль" >
+            </p>
+            <button class="form_auth_button" type="submit" name="form_auth_submit">Войти</button>
+         </form>
+      </div>
+   </div>
+   <script src="/server.js"></script>
+</body>
+</html>
